@@ -5,7 +5,11 @@ sudo apt install -y \
     wget gpg curl \
     git podman gparted \
     python3 python3-pip python3-venv \
-    flatpak gnome-software-plugin-flatpak 
+    flatpak gnome-software-plugin-flatpak \
+    gnome-shell-extension-dashtodock \
+    gnome-tweaks
+
+gnome-extensions enable dash-to-dock@micxgx.gmail.com || true
 
 # flatpak business
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
