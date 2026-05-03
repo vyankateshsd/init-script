@@ -17,7 +17,7 @@ clone the repository and run:
 
 ```bash
 sudo ./init.sh
-````
+```
 
 
 ## overview
@@ -51,10 +51,18 @@ applies user-specific configs such as
 - keybindings and preferences
 - Git configuration
 
-and generates a SSH key to be used for remote access to GitHub
+it also generates a SSH key to be used for remote access to GitHub
 
-generated key is output in the terminal the user has to add the key to their GitHub account, following which they can access their GitHub repos using the Git cli
+sample output: 
+```bash
+ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX vyankateshdande.vd@gmail.com
+```
 
+add this key to your GitHub account at https://github.com/settings/keys > "New SSH key"
+
+now you can push to your GitHub repositories with Git CLI
+
+> note: order of the scripts is important. the scripts are not meant to be run individually.
 
 ## future plans
 
