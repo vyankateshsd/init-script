@@ -1,7 +1,7 @@
 echo "[+] Installing apt packages"
 
 sudo apt remove -y firefox-esr || true
-sudo apt install -y gnome-tweaks code firefox
+sudo apt install -y gnome-tweaks code firefox git
 
 
 echo "[+] Installing Flatpaks"
