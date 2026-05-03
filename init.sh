@@ -41,3 +41,8 @@ sudo apt update
 sudo apt install -y code
 
 sudo apt autoremove -y
+
+# configure git
+git config --global user.name "Vyankatesh Dande"
+git config --global user.email "vyankateshdande.vd@gmail.com"
+git config --global init.defaultBranch main
