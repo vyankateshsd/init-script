@@ -16,14 +16,6 @@ sudo apt-get install -y \
     flatpak \
     gnome-software-plugin-flatpak           # GNOME - Flatpak integration
 
-
-# ==========
-# Install Podman
-# ==========
-echo "|- Installing Podman"
-sudo apt-get install -y podman
-
-
 # ==========
 # Install QEMU
 # ==========
