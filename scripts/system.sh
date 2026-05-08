@@ -24,6 +24,12 @@ echo "|- Installing Podman"
 sudo apt-get install -y podman
 
 
+# ==========
+# Install QEMU
+# ==========
+echo "|- Installing QEMU"
+sudo apt-get install -y qemu-system qemu-utils qemu-kvm
+
 echo "[-] Configuring package managers"
 
 # ==========
