@@ -11,8 +11,10 @@ sudo apt-get install -y -q \
 # Install NVM and Node
 # ==========
 echo "|- Installing NVM"
+if [ ! -d "$HOME/.nvm" ]; then
 curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 source ~/.bashrc
+fi
 
 echo "|- Installing NodeJS"
 nvm install --lts
@@ -22,8 +24,8 @@ nvm install --lts
 # Install C & C++
 # ==========
 echo "|- Installing C & C++ tools"
-sudo apt-get install -y -q \
-    gcc g++ gdb make cmake
+sudo apt-get install -y \
+    gcc g++ gdb make cmake libncurses-dev flex bison
 
 
 echo "[+] Installing runtime extras"
