@@ -25,7 +25,7 @@ nvm install --lts
 # ==========
 echo "|- Installing C & C++ tools"
 sudo apt-get install -y \
-    gcc g++ gdb make cmake libncurses-dev flex bison
+    gcc g++ gdb make cmake libncurses-dev flex bison elfutils libelf-dev
 
 
 echo "[+] Installing runtime extras"
